@@ -37,13 +37,7 @@ bot.start(async(ctx)=>{
             userId:ctx.from.id
         }
         await ctx.deleteMessage(ctx.message.message_id)
-        await ctx.reply(`Welcome <a href="tg://user?id=${ctx.from.id}">${first_name(ctx)} ${last_name(ctx)}</a> \n\nBot broadcast for Child Porn (CP) group information, don't delete the bot.`,{
-            parse_mode:'HTML',
-            disable_web_page_preview: true,
-            reply_markup:{
-                inline_keyboard:inKey
-            }
-        })
+        await ctx.reply(`Welcome <a href="tg://user?id=${ctx.from.id}">${first_name(ctx)} ${last_name(ctx)}</a> \n\nBot broadcast for Child Porn (CP) group information, don't delete the bot.`)
         await saver.saveUser(user)
     }
 })
