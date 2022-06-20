@@ -1,6 +1,6 @@
 {
-	"name": "RatuCP",
-	"description": "Ratu CP",
+	"name": "Broadcast",
+	"description": "Broadcast",
 	"repository": "https://github.com/BimoSora/Broadcast",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Heroku_logo.svg",
 	"keywords": ["telegram","filesaver","bot","nodejs"],
