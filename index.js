@@ -30,6 +30,8 @@ function fromid(ctx){
     return ctx.from.id ? `[${ctx.from.id}]` : "";
 }
 
+bot.catch(e => console.error(e))
+
 bot.start(async(ctx)=>{
     if(ctx.chat.type == 'private') {
         const user = {
@@ -113,8 +115,6 @@ bot.command('stats',async(ctx)=>{
         
     })
 })
-
-bot.catch(e => console.error(e))
  
 //heroku config
 const domain = `${process.env.DOMAIN}.herokuapp.com`
